@@ -3,7 +3,7 @@
 // Default color scheme settings
 // These are overridden in classic.css and dark.scss
 
-$color-scheme-auto: false !default;
+$color-scheme-auto: true !default;
 $color-scheme-dark: false !default;
 
 $bulb_purple: #662583;
@@ -419,9 +419,9 @@ body .site-header {
 }
 
 .footer-col > p, .p-name {
-    color: $lm-background-color;
+    color: $background-color;
 }
 
 li .fa-brands {
-    color: $lm-border-color-01;
+    color: $border-color-01;
 }
