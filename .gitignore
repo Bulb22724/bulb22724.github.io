@@ -5,3 +5,4 @@ _site
 vendor
 tmp
 Gemfile.lock
+_config.yml

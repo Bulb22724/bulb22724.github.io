@@ -1,4 +1,2 @@
-export BUNDLE_WITHOUT=nolocal
-rm -r tmp
-bundle install
+./_make_config.sh local
 bundle exec jekyll serve

@@ -26,11 +26,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Клонирование
         uses: actions/checkout@v4
-      - name: Setup Pages
+      - name: Подготовка Pages
         uses: actions/configure-pages@v5
-      - name: Build with Jekyll
+      - name: Генерация _config.yml
+        run: |
+            sudo apt-get update
+            sudo apt-get install -y gpp
+            chmod +x ./_make_config.sh
+            ./_make_config.sh github
+      - name: Сборка с Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
@@ -46,6 +52,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Опубликовать на GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -23,11 +23,16 @@ title: Bulb 22724
 description: >- # this means to ignore newlines until "baseurl:"
   Bulb 22724 - команда по робототехнике FTC ГБОУ СОШ №385 Санкт-Петербурга.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://bulb22724.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://bulb22724.github.io" ## the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
+
+#ifdef LOCALTEST
 theme: minima
+#else
 remote_theme: "jekyll/minima"
+#endif
+
 plugins:
   - jekyll-feed
 
