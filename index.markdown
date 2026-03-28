@@ -3,5 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Главная страница
+permalink: /
 ---
 Мы - команда FTC Bulb 22724

@@ -131,7 +131,7 @@ $dm-brand-color-dark:      darken($dm-brand-color, 43%) !default;
 $dm-site-title-color:      $bulb_orange !default;
 
 $dm-heading-color:         #bbbbbb !default;
-$dm-text-color:            darken($dm-heading-color, 15%) !default;
+$dm-text-color:            lighten($dm-heading-color, 5%) !default;
 $dm-background-color:      #181818 !default;
 $dm-code-background-color: #222222 !default;
 
@@ -139,7 +139,7 @@ $dm-link-base-color:       #5691cd !default;
 $dm-link-visited-color:    #80bbff !default;
 $dm-link-hover-color:      $dm-text-color !default;
 
-$dm-border-color-01:       $dm-brand-color-dark !default;
+$dm-border-color-01:       $dm-brand-color-light !default;
 $dm-border-color-02:       $dm-brand-color-light !default;
 $dm-border-color-03:       $dm-brand-color !default;
 
@@ -267,6 +267,8 @@ $table-header-bg-color: $lm-table-header-bg-color;
 $table-header-border: $lm-table-header-border;
 $table-border-color: $lm-table-border-color;
 
+$footer-text-color: $lm-background-color;
+
 
 @if $color-scheme-auto {
 
@@ -298,6 +300,8 @@ $table-border-color: $lm-table-border-color;
         --minima-table-header-bg-color: #{$lm-table-header-bg-color};
         --minima-table-header-border: #{$lm-table-header-border};
         --minima-table-border-color: #{$lm-table-border-color};
+
+        --footer-text-color: #{$lm-background-color};
     }
 
     @include lm-highlight;
@@ -329,6 +333,8 @@ $table-border-color: $lm-table-border-color;
             --minima-table-header-bg-color: #{$dm-table-header-bg-color};
             --minima-table-header-border: #{$dm-table-header-border};
             --minima-table-border-color: #{$dm-table-border-color};
+
+            --footer-text-color: #{$dm-text-color};
         }
 
         @include dm-highlight;
@@ -360,6 +366,7 @@ $table-border-color: $lm-table-border-color;
     $table-header-border: var(--minima-table-header-border);
     $table-border-color: var(--minima-table-border-color);
 
+    $footer-text-color: var(--footer-text-color);
 
 } @else if $color-scheme-dark {
 
@@ -391,6 +398,8 @@ $table-border-color: $lm-table-border-color;
     $table-header-border: $dm-table-header-border;
     $table-border-color: $dm-table-border-color;
 
+    $footer-text-color: $dm-text-color;
+
     @include dm-highlight;
 
 
@@ -408,6 +417,7 @@ $table-border-color: $lm-table-border-color;
 body .site-header {
     //font-size: 100vh;
     background-color: darken($bulb_purple, 10%);
+    border-top: 0px;
 }
 
 .wrapper .site-title
@@ -420,11 +430,11 @@ body .site-header {
 }
 
 .footer-col > p, .p-name {
-    color: $background-color;
+    color: $footer-text-color;
 }
 
 li .fa-brands {
-    color: $border-color-01;
+    color: $footer-text-color;
 }
 
 .u-email {
