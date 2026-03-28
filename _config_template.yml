@@ -1,3 +1,5 @@
+# Не редактируйте _config.yml. Вносите изменения в _config_template.yml и регенирируйте конфигурацию через _make_config.sh
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -42,15 +44,18 @@ author:
 
 minima:
   hide_site_feed_link: true
-  #skin: solarized
+  skin: bulb
 
   social_links:
     - title: Наша группа в ВК
       icon: vk
-      url: "https://github.com/jekyll/jekyll"
+      url: "https://vk.ru/club236996091"
     - title: Наш канал в Telegram
       icon: telegram
       url: "https://t.me/bulb22724"
+    - title: Исходный код этого сайта на GitHub
+      icon: github
+      url: "https://github.com/bulb22724/bulb22724.github.io"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -71,3 +76,5 @@ minima:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - README.md

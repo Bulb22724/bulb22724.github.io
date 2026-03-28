@@ -1,4 +1,8 @@
-#gpp _config_template.yml -D... -o _config.yml
+if ! gpp --help > /dev/null; then
+    printf "не удалось найти gpp. установите: \n - системы, основанные на Debian: sudo apt install gpp \n - основанные на Arch: yay install gpp (или любым другим AUR-менеджером)\n"
+    exit
+fi
+
 if [ -z $1 ]; then
     echo "режим работы не указан. введите 'local' для локального теста (только theme) или 'github' для github (только remote_theme)"
     read mode
