@@ -14,7 +14,7 @@ $bulb_orange: #f8b117;
 
 $lm-brand-color:           #818181 !default;
 $lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
-$lm-brand-color-dimmed:    lighten($lm-brand-color, 15%) !default;
+$lm-brand-color-dimmed:    darken($lm-brand-color, 15%) !default;
 $lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
 
 $lm-site-title-color:      $bulb-orange !default;
@@ -405,7 +405,7 @@ $table-border-color: $lm-table-border-color;
 }
 
 body .site-header {
-    #font-size: 100vh;
+    //font-size: 100vh;
     background-color: darken($bulb_purple, 10%);
 }
 
@@ -416,4 +416,12 @@ body .site-header {
 
 .site-nav .nav-items .nav-item {
     color: $bulb_orange;
+}
+
+.footer-col > p, .p-name {
+    color: $lm-background-color;
+}
+
+li .fa-brands {
+    color: $lm-border-color-01;
 }
