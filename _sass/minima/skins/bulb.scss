@@ -7,6 +7,7 @@ $color-scheme-auto: true !default;
 $color-scheme-dark: false !default;
 
 $bulb_purple: #662583;
+//$bulb_purple: #ae00ff;
 $bulb_orange: #f8b117;
 
 // Light mode
@@ -127,7 +128,7 @@ $dm-brand-color-light:     lighten($dm-brand-color, 5%) !default;
 $dm-brand-color-dimmed:    darken($dm-brand-color, 8%) !default;
 $dm-brand-color-dark:      darken($dm-brand-color, 43%) !default;
 
-$dm-site-title-color:      $dm-brand-color-light !default;
+$dm-site-title-color:      $bulb_orange !default;
 
 $dm-heading-color:         #bbbbbb !default;
 $dm-text-color:            darken($dm-heading-color, 15%) !default;
@@ -424,4 +425,8 @@ body .site-header {
 
 li .fa-brands {
     color: $border-color-01;
+}
+
+.u-email {
+    color: $bulb_orange;
 }
