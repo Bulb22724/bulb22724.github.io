@@ -53,6 +53,9 @@ minima:
     - title: Наш канал в Telegram
       icon: telegram
       url: "https://t.me/bulb22724"
+    - title: Исходный код этого сайта на GitHub
+      icon: github
+      url: "https://github.com/bulb22724/bulb22724.github.io"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
