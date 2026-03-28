@@ -5,8 +5,10 @@ if [ -z $1 ]; then
     ./_make_config.sh $mode
 elif [ $1 == "local" ]; then
     gpp _config_template.yml -DLOCALTEST -o _config.yml
+    echo "создан файл конфигурации для тестирования на localhost:4000"
 elif [ $1 == "github" ]; then
     gpp _config_template.yml -o _config.yml
+    echo "создан файл конфигурации для публикации на bulb22724.github.io"
 else
     echo "неизвестный режим работы $1 (запустите без аргументов для вариантов)"
 fi
