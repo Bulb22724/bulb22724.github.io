@@ -3,31 +3,28 @@
 // Default color scheme settings
 // These are overridden in classic.css and dark.scss
 
-$color-scheme-auto: true !default;
+$color-scheme-auto: false !default;
 $color-scheme-dark: false !default;
 
+$bulb_purple: #662583;
+$bulb_orange: #f8b117;
 
 // Light mode
 // ----------
-// #662583 = BULBовый фиолетовый
-// #f8ad1c = BULBовый жёлтый
 
-$lm-brand-color:           #662583 !default;
+$lm-brand-color:           #818181 !default;
 $lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
-
-$lm-brand-color-dimmed:    lighten($lm-brand-color, 25%) !default;
-$lm-brand-color-background: darken($lm-brand-color, 11%) !default;
-
+$lm-brand-color-dimmed:    lighten($lm-brand-color, 15%) !default;
 $lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
 
-$lm-site-title-color:      $lm-brand-color-light !default;
+$lm-site-title-color:      $bulb-orange !default;
 
-$lm-heading-color:         $lm-brand-color-light !default;
-$lm-text-color:            $lm-brand-color-light !default;
-$lm-background-color:      $lm-brand-color !default;
-$lm-code-background-color: $lm-brand-color-background !default;
+$lm-heading-color:         #111111 !default;
+$lm-text-color:            $lm-brand-color-dark !default;
+$lm-background-color:      #fdfdfd !default;
+$lm-code-background-color: #f6f8fa !default;
 
-$lm-link-base-color:       #f8ad1c !default;
+$lm-link-base-color:       #1e69d8 !default;
 $lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
 $lm-link-hover-color:      $lm-text-color !default;
 
@@ -75,7 +72,7 @@ $lm-table-border-color:    $lm-border-color-01 !default;
         .kr    { color: #cf222e } // Keyword.Reserved
         .kt    { color: #445588 } // Keyword.Type
 
-        .n     { color: $lm-text-color }
+        .n     { color: #111111 }
         .na    { color: #097e39 } // Name.Attribute
         .nb    { color: #cf222e } // Name.Builtin
         .bp    { color: #999999 } // Name.Builtin.Pseudo
@@ -118,7 +115,6 @@ $lm-table-border-color:    $lm-border-color-01 !default;
 
         .lineno, .gl { color: #9c9996 } // Line Number
         .hll   { background-color: #ffffcc } // Marked-lines
-        .p {color: $lm-text-color}
     }
 }
 
@@ -160,7 +156,7 @@ $dm-table-border-color:    $dm-border-color-01 !default;
 // https://github.com/material-theme/vsc-material-theme/blob/master/scripts/generator/color-set.ts
 // ----------------------------------------------------------------------------
 
-/*@mixin dm-highlight {
+@mixin dm-highlight {
     .highlight {
         .err   { color: #e3d2d2; background-color: #8c2121 } // Error
 
@@ -234,7 +230,7 @@ $dm-table-border-color:    $dm-border-color-01 !default;
         .lineno, .gl { color: #8a8a8a } // Line Number
         .hll   { background-color: #373730 } // Marked-lines
     }
-}*/
+}
 
 
 // Mode selection
@@ -305,7 +301,7 @@ $table-border-color: $lm-table-border-color;
 
     @include lm-highlight;
 
-    /*@media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: dark) {
         :root {
             --minima-brand-color: #{$dm-brand-color};
             --minima-brand-color-light: #{$dm-brand-color-light};
@@ -335,7 +331,7 @@ $table-border-color: $lm-table-border-color;
         }
 
         @include dm-highlight;
-    }*/
+    }
 
     $brand-color: var(--minima-brand-color);
     $brand-color-light: var(--minima-brand-color-light);
@@ -364,7 +360,7 @@ $table-border-color: $lm-table-border-color;
     $table-border-color: var(--minima-table-border-color);
 
 
-} /*@else if $color-scheme-dark {
+} @else if $color-scheme-dark {
 
     // Dark skin (always dark mode)
 
@@ -397,9 +393,27 @@ $table-border-color: $lm-table-border-color;
     @include dm-highlight;
 
 
-} */ @else {
+} @else {
 
     // Classic skin syntax highlighting
     @include lm-highlight;
 
+}
+
+.site-footer {
+    background-color: darken($bulb_purple, 10%);
+}
+
+body .site-header {
+    #font-size: 100vh;
+    background-color: darken($bulb_purple, 10%);
+}
+
+.wrapper .site-title
+{
+    font-weight: bold;
+}
+
+.site-nav .nav-items .nav-item {
+    color: $bulb_orange;
 }
