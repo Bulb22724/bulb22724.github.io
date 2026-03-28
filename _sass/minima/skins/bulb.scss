@@ -3,10 +3,11 @@
 // Default color scheme settings
 // These are overridden in classic.css and dark.scss
 
-$color-scheme-auto: false !default;
+$color-scheme-auto: true !default;
 $color-scheme-dark: false !default;
 
 $bulb_purple: #662583;
+//$bulb_purple: #ae00ff;
 $bulb_orange: #f8b117;
 
 // Light mode
@@ -14,7 +15,7 @@ $bulb_orange: #f8b117;
 
 $lm-brand-color:           #818181 !default;
 $lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
-$lm-brand-color-dimmed:    lighten($lm-brand-color, 15%) !default;
+$lm-brand-color-dimmed:    darken($lm-brand-color, 15%) !default;
 $lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
 
 $lm-site-title-color:      $bulb-orange !default;
@@ -127,7 +128,7 @@ $dm-brand-color-light:     lighten($dm-brand-color, 5%) !default;
 $dm-brand-color-dimmed:    darken($dm-brand-color, 8%) !default;
 $dm-brand-color-dark:      darken($dm-brand-color, 43%) !default;
 
-$dm-site-title-color:      $dm-brand-color-light !default;
+$dm-site-title-color:      $bulb_orange !default;
 
 $dm-heading-color:         #bbbbbb !default;
 $dm-text-color:            darken($dm-heading-color, 15%) !default;
@@ -405,7 +406,7 @@ $table-border-color: $lm-table-border-color;
 }
 
 body .site-header {
-    #font-size: 100vh;
+    //font-size: 100vh;
     background-color: darken($bulb_purple, 10%);
 }
 
@@ -415,5 +416,17 @@ body .site-header {
 }
 
 .site-nav .nav-items .nav-item {
+    color: $bulb_orange;
+}
+
+.footer-col > p, .p-name {
+    color: $background-color;
+}
+
+li .fa-brands {
+    color: $border-color-01;
+}
+
+.u-email {
     color: $bulb_orange;
 }
