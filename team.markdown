@@ -5,16 +5,14 @@ permalink: /team/
 ---
 
 <div class="grid-3cols">
-    {% for person in site.data.members %}
+    {% assign sortedpeople = site.data.members | sort: "name" %}
+    {% for person in sortedpeople %}
         <div>
-            <img src="{{person.photo}}" />
+            <img src="/assets/memberphotos/{{person.photo}}" />
             <p>{{person.name}}</p>
-            <!--p class="material-symbols-outlined">
-                {% for role in person.roles %}
-                    <span title="{{role}}">{{site.data.roles[role]}}</span>
-                {% endfor %}
-            </p-->
-            {% for role in person.roles %}
+            
+            {% assign sortedroles = person.roles | sort %}
+            {% for role in sortedroles %}
                 <p style="text-align: left;"><span class="material-symbols-outlined" style="vertical-align: bottom;" >{{site.data.roles[role]}}</span> {{role}} </p>
             {% endfor %}
         </div>

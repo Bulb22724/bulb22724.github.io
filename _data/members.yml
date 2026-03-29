@@ -4,10 +4,70 @@
     - Программирование
     - Моделирование
     - Разработка сайта
-  photo: /assets/icons/favicon-96x96.png
+  photo: Artyom_face.jpeg
   
 - name: Алексей Рогозов
   roles:
     - Капитан
     - Программирование
-  photo: /assets/icons/favicon-96x96.png
+  photo: Aleksei_face.jpeg
+
+- name: Диана Полякова
+  roles:
+    - Дизайн
+  photo: Diana_face.jpeg
+
+- name: Вероника Яковлева
+  roles:
+    - Написание постов
+    - Сборка
+    - Моделирование
+  photo: Veronika1_face.jpeg
+
+- name: Наталина Ростова
+  roles:
+    - Сборка
+    - Написание постов
+    - Дизайн
+  photo: Natalina_face.jpeg
+
+- name: Полина Кошкина
+  roles:
+    - Моделирование
+    - Написание постов
+  photo: Polina_face.jpeg
+
+- name: Пётр Гончаров
+  roles:
+    - Сборка
+    - Моделирование
+  photo: Pyotr_face.jpeg
+
+- name: Сергей Смирнов
+  roles:
+    - Программирование
+    - Сборка
+  photo: Sergey1_face.jpeg
+
+- name: Марина Хамадова
+  roles:
+    - Моделирование
+    - Сборка
+    - Написание постов
+  photo: Marina_face.jpeg
+
+- name: София Носкова
+  roles:
+    - Моделирование
+    - Написание постов
+  photo: Sonya_face.jpeg
+
+- name: Яна Беленко
+  roles:
+    - Моделирование
+  photo: Yana_face.jpeg
+
+- name: Роман Зимбицкий
+  roles: 
+    - Сборка
+  photo: Roma_face.jpeg

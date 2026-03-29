@@ -453,7 +453,7 @@ li .fa-brands {
 }
 
 /* Add responsive adjustments as needed using media queries */
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   .grid-3cols {
     grid-template-columns: 1fr; /* Single column on small screens */
   }
