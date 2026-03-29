@@ -1,6 +1,10 @@
 # bulb22724-github.io
 Сайт команды FTC Bulb 22724.
 
+## Решение проблем
+Информацию о проблемах, возникших по ходу разработки,
+можно найти в файле [`_project_problems.md`](/_project_problems.md).
+
 ## Разработка
 Для начала вам потребуются `ruby`, `bundler` и `gpp`.
 
@@ -24,3 +28,5 @@ bundle install
 `Регенерировать конфигурацию и запустить на localhost:4000` >
 `Continue without scanning the output`. Это эквивалентно вышеупомянотому
 скрипту.
+
+Тестирование на Windows возможно при помощи [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/ru-ru/windows/wsl/install).
