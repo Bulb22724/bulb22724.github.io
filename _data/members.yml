@@ -1,0 +1,13 @@
+- name: Артём Улитин
+  roles:
+    - Сборка
+    - Программирование
+    - Моделирование
+    - Разработка сайта
+  photo: /assets/icons/favicon-96x96.png
+  
+- name: Алексей Рогозов
+  roles:
+    - Капитан
+    - Программирование
+  photo: /assets/icons/favicon-96x96.png

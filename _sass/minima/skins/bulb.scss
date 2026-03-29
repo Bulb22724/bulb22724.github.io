@@ -9,6 +9,7 @@ $color-scheme-dark: false !default;
 $bulb_purple: #662583;
 //$bulb_purple: #ae00ff;
 $bulb_orange: #f8b117;
+$bulb_orange_dark: darken($bulb_orange, 10%);
 
 // Light mode
 // ----------
@@ -439,4 +440,37 @@ li .fa-brands {
 
 .u-email {
     color: $bulb_orange;
+}
+
+.u-email:hover {
+    color: $bulb_orange_dark;
+}
+
+.grid-3cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between grid items */
+}
+
+/* Add responsive adjustments as needed using media queries */
+@media (max-width: 380px) {
+  .grid-3cols {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
+
+.grid-3cols > div {
+    justify-self: center;
+    text-align: center;
+}
+
+.grid-3cols .bulb-roles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+}
+
+html body {
+    font-family: 'Jost', 'Comfortaa', 'sans-serif';
 }
