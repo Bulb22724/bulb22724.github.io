@@ -1,4 +1,6 @@
-# bulb22724-github.io
+# bulb22724-github.io 
+[![Публикация сайта Jekyll с зависимостями GitHub Pages](https://github.com/Bulb22724/bulb22724.github.io/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/Bulb22724/bulb22724.github.io/actions/workflows/jekyll-gh-pages.yml)
+
 Сайт команды FTC Bulb 22724.
 
 ## Решение проблем
@@ -16,6 +18,7 @@ git clone https://github.com/bulb22724/bulb22724.github.io.git
 ```
 bundle install
 ```
+Пожалуйста, работайте только на ветке `dev` и создавайте pull request при готовности опубликовать сайт.
 
 ## Тестирование
 Без публикации на GitHub Pages сайт можно тестировать локально. Это
