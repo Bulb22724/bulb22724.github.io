@@ -454,11 +454,12 @@ li .fa-brands {
 }
 
 /* Add responsive adjustments as needed using media queries */
-@media (max-width: 500px) {
+/*@media (max-width: 500px) {
   .grid-3cols {
-    grid-template-columns: 1fr; /* Single column on small screens */
+    grid-template-columns: 1fr; /* Single column on small screens 
+    width: 100%;
   }
-}
+}*/
 
 .grid-3cols > div {
     justify-self: center;
@@ -479,8 +480,9 @@ li .fa-brands {
 }
 
 @media (max-width: 500px) {
-  .grid-2cols {
+  .grid-3cols, .grid-2cols, .grid-1cols {
     grid-template-columns: 1fr; /* Single column on small screens */
+    width: 75%;
   }
 }
 
