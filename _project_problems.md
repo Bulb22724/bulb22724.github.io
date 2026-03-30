@@ -95,8 +95,8 @@ HTML?
 <p>{{person.name}}</p>
 ```
 
-Соотнести иконку с названием роли позволяет файл `_data/roles.yml`.
-Он представляет собой словарь перевода названия роли в название
+Соотнести иконку с названием роли позволяет файл `_data/icons.yml`.
+Его ключ `roles` представляет собой словарь перевода названия роли в название
 её иконки:
 
 ```yaml
@@ -106,7 +106,7 @@ HTML?
 ```
 Название иконки становится текстом особового `span`:
 ```html
-<span class="material-symbols-outlined" style="vertical-align: bottom;" >{{site.data.roles[role]}}</span>
+<span class="material-symbols-outlined" style="vertical-align: bottom;" >{{site.data.icons.roles[role]}}</span>
 ```
 
 ## Шрифт иконок Google Material Icons

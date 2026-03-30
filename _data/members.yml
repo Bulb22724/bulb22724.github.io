@@ -49,7 +49,7 @@
     - Сборка
   photo: Sergey_face.jpeg
 
-- name: Марина Хамадова
+- name: Марина Хамадова (фото временное)
   roles:
     - Моделирование
     - Сборка
@@ -81,3 +81,8 @@
   roles:
     - Сборка
   photo: Dima_face.jpeg
+
+- name: Павел Демидов
+  roles:
+    - Программирование
+  photo: Pavel_face.jpeg

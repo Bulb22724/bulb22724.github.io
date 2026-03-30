@@ -1,0 +1,20 @@
+<div class="mentor-info">
+    <img class="rounded" src="/assets/mentorphotos/{{include.person.photo}}" />
+    <p>{{include.person.name}}</p>
+    <p style="text-align: left;">
+        <span 
+            class="material-symbols-outlined">
+                {{include.person.icon}}
+        </span> {{include.person.role}} 
+    </p>
+    {% for contact in include.person.contacts %}
+        {% assign contacttype = contact[0] %}
+        <a href="{{site.data.socialprefixes[contacttype]}}{{contact[1]}}"
+            style="display: block;">
+            <span class="material-symbols-outlined">
+                {{site.data.icons.contacts[contacttype]}}
+            </span>
+            {{contact[1]}}
+        </a>
+    {% endfor %}
+</div>

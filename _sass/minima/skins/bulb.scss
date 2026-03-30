@@ -7,9 +7,11 @@ $color-scheme-auto: true !default;
 $color-scheme-dark: false !default;
 
 $bulb_purple: #662583;
+$bulb_purple_bright: lighten($bulb_purple, 25%);
 //$bulb_purple: #ae00ff;
 $bulb_orange: #f8b117;
 $bulb_orange_dark: darken($bulb_orange, 10%);
+$bulb_orange_superdark: darken($bulb_orange, 20%);
 
 // Light mode
 // ----------
@@ -495,4 +497,25 @@ li .fa-brands {
 
 html body {
     font-family: 'Jost', 'Comfortaa', 'sans-serif';
+}
+
+.bulb-orange {
+    color: $bulb_orange;
+}
+
+.material-symbols-outlined {
+    vertical-align: bottom;
+}
+
+.mentor-info > a {
+    text-align: left;
+    color:$bulb_purple_bright;
+}
+
+.mentor-info > a:visited {
+    color: $bulb_purple
+}
+
+.rounded {
+    border-radius: 10%;
 }

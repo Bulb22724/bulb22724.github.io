@@ -1,0 +1,27 @@
+- name: Михаил Яковлев
+  role: Царь всея BULB-есии
+  icon: crown
+  photo: MikhailYakovlev_face.jpeg
+  contacts:
+    email: mayak2905@gmail.com
+    telegram: Mayak2905
+- name: Михаил Колесников
+  role: Руководитель по программированию
+  icon: code
+  photo: MikhailKolesnikov_face.jpeg
+  contacts:
+    email: заполнить (мне известен только указанный на робофинисте)
+    telegram: meklomanik
+- name: Анастасия Власенко
+  role: Наставник по моделированию
+  icon: deployed_code
+  photo: Nastya_face.jpeg
+  contacts:
+    email: заполнить
+    telegram: your_paink1ller
+- name: Глеб Меновщиков
+  role: Наставник по программированию
+  icon: code
+  photo: Gleb_face.jpeg
+  contacts:
+    telegram: valem229

@@ -6,4 +6,4 @@ layout: home
 title: Главная страница
 permalink: /
 ---
-Мы - команда FTC Bulb 22724
+Мы - команда FTC Bulb 22724! 

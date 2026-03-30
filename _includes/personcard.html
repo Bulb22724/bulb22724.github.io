@@ -1,15 +1,15 @@
 <div>
-    <img src="/assets/memberphotos/{{include.person.photo}}" />
+    <img class="rounded" src="/assets/memberphotos/{{include.person.photo}}" />
     <p>{{include.person.name}}</p>
     {% assign sortedroles = include.person.roles | sort %}
     {% for role in sortedroles %}
-        {% assign iconname = site.data.roles[role] %}
+        {% assign iconname = site.data.icons.roles[role] %}
         <p style="text-align: left; {% if iconname == Nil %} font-weight: bold; {% endif %}">
             <span 
-                class="material-symbols-outlined" style="vertical-align: bottom;"
+                class="material-symbols-outlined"
                 {% if iconname == Nil %}
                     {% assign rolestring = "" %}
-                    {% for validrole in site.data.roles %}
+                    {% for validrole in site.data.icons.roles %}
                         {% assign rolestring = rolestring | append: validrole[0] %}
                         {% unless forloop.last %}
                             {% assign rolestring = rolestring | append: ", " %}

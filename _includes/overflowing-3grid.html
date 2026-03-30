@@ -1,0 +1,21 @@
+{% assign sortedpeople = include.people | sort: "name" %}
+{% assign numpeople = sortedpeople | size %}
+{% assign fullrows = numpeople | divided_by: 3 %}
+{% assign fullrowitems = fullrows | times: 3 %}
+{% assign itemsoffullrows = sortedpeople | slice: 0, fullrowitems %}
+{% assign numitemsleft = numpeople | minus: fullrowitems  %}
+{% assign itemsleft = sortedpeople | slice: fullrowitems, numitemsleft %}
+
+<div class="grid-3cols">
+    {% for person in itemsoffullrows %}
+        {% include {{include.template}} person=person%}
+    {% endfor %}
+</div>
+
+{% if numitemsleft > 0 %}
+<div class="grid-{{numitemsleft}}cols">
+    {% for person in itemsleft %}
+        {% include {{include.template}} person=person%}
+    {% endfor %}
+</div>
+{% endif %}
