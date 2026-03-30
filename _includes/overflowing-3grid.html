@@ -1,4 +1,9 @@
-{% assign sortedpeople = include.people | sort: "name" %}
+{% unless include.dontsort %}
+    {% assign sortedpeople = include.people | sort: "name" %}
+{% else %}
+    {% assign sortedpeople = include.people %}
+{% endunless %}
+
 {% assign numpeople = sortedpeople | size %}
 {% assign fullrows = numpeople | divided_by: 3 %}
 {% assign fullrowitems = fullrows | times: 3 %}

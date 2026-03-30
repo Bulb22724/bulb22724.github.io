@@ -22,4 +22,4 @@ permalink: /team/
 {% include heading.html text="Руководители и наставники" id="mentors" %}
 фото временные
 
-{% include overflowing-3grid.html people=site.data.mentors template="mentorcard.html"%}
+{% include overflowing-3grid.html people=site.data.mentors template="mentorcard.html" dontsort=true%}
