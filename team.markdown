@@ -26,8 +26,10 @@ permalink: /team/
     {% endfor %}
 </div>
 
+{% if numitemsleft > 0 %}
 <div class="grid-{{numitemsleft}}cols">
     {% for person in itemsleft %}
-        {% include  personcard.html person=person%}
+        {% include personcard.html person=person%}
     {% endfor %}
 </div>
+{% endif %}
