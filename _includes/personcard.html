@@ -1,0 +1,8 @@
+<div>
+    <img src="/assets/memberphotos/{{include.person.photo}}" />
+    <p>{{include.person.name}}</p>
+    {% assign sortedroles = include.person.roles | sort %}
+    {% for role in sortedroles %}
+        <p style="text-align: left;"><span class="material-symbols-outlined" style="vertical-align: bottom;" >{{site.data.roles[role]}}</span> {{role}} </p>
+    {% endfor %}
+</div>

@@ -22,7 +22,7 @@
     - Написание постов
     - Сборка
     - Моделирование
-  photo: Veronika1_face.jpeg
+  photo: Veronika_face.jpeg
 
 - name: Наталина Ростова
   roles:
@@ -47,7 +47,7 @@
   roles:
     - Программирование
     - Сборка
-  photo: Sergey1_face.jpeg
+  photo: Sergey_face.jpeg
 
 - name: Марина Хамадова
   roles:
@@ -71,3 +71,13 @@
   roles: 
     - Сборка
   photo: Roma_face.jpeg
+
+- name: Лев Осипов
+  roles:
+    - Программирование
+  photo: Leo_face.jpeg
+
+- name: Дмитрий Князев
+  roles:
+    - Сборка
+  photo: Dima_face.jpeg

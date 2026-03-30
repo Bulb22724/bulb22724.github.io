@@ -449,7 +449,8 @@ li .fa-brands {
 .grid-3cols {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
-  gap: 20px; /* Space between grid items */
+  column-gap: 5%; /* Space between grid items */
+  place-self: center;
 }
 
 /* Add responsive adjustments as needed using media queries */
@@ -462,14 +463,33 @@ li .fa-brands {
 .grid-3cols > div {
     justify-self: center;
     text-align: center;
+    margin-bottom: 10%;
 }
 
-.grid-3cols .bulb-roles {
+.grid-2cols {
+    @extend .grid-3cols;
+    grid-template-columns: 1fr 1fr;
+    width: calc(2/3*100%);
+}
+
+.grid-1cols {
+    @extend .grid-3cols;
+    grid-template-columns: 1fr;
+    width: calc(1/3*100%);
+}
+
+@media (max-width: 500px) {
+  .grid-2cols {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
+
+/*.grid-3cols .bulb-roles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     gap: 1rem;
-}
+}*/
 
 html body {
     font-family: 'Jost', 'Comfortaa', 'sans-serif';

@@ -108,3 +108,12 @@ HTML?
 ```html
 <span class="material-symbols-outlined" style="vertical-align: bottom;" >{{site.data.roles[role]}}</span>
 ```
+
+## Шрифт иконок Google Material Icons
+**Проблема**: указание более чем четырёх названий иконок в
+параметрах CSS-файла Material Icons не позволяет правильно
+загрузить его.
+
+**Решение**: как оказалось, если не указывать список нужных
+иконок, то успешно загрузятся все, что также упрощает
+ссылку на CSS-файл.
