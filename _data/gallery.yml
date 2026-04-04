@@ -1,7 +1,12 @@
 favorites:
-  - url: /assets/events/decode/ulianka-battery.jpg
-    label: Мем с аккумулятором, созданный на Ulianka Scrimmage 4.0
-others:
+categories:
+  - name: Избранные фото
+    id: favorites
+    folder: /.
+    photos:
+      - url: /assets/events/decode/ulianka-battery.jpg
+        label: Мем с аккумулятором, созданный на Ulianka Scrimmage 4.0
+    
   - name: DECODE
     folder: /assets/events/decode
     id: decode
