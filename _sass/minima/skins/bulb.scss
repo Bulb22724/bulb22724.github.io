@@ -432,7 +432,8 @@ body .site-header {
     color: $bulb_orange;
 }
 
-.footer-col > p, .p-name {
+.footer-col > p, 
+.footer-col .p-name {
     color: $footer-text-color;
 }
 
@@ -496,7 +497,7 @@ li .fa-brands {
 }*/
 
 html body {
-    font-family: 'Jost', 'Comfortaa', 'sans-serif';
+    font-family: 'Jost', 'Comfortaa', 'Noto Color Emoji', 'sans-serif';
 }
 
 .bulb-orange {
@@ -516,6 +517,25 @@ html body {
     color: $bulb_purple
 }
 
-.rounded {
-    border-radius: 10%;
+.rounded,
+.post-content img {
+    border-radius: 50px;
+}
+
+a > .grey {
+    color: var(--footer-text-color)
+}
+
+.gallery-embed .gallery-controls {
+    cursor: pointer;
+    user-select: none;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.gallery-image {
+    width: 90%;
+    //display: block;
+    //margin-left: auto;
+    //margin-right: auto;
 }

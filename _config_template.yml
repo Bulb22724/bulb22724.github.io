@@ -27,6 +27,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://bulb22724.github.io" ## the base hostname & protocol for your site, e.g. http://example.com
 
+sass:
+  quiet_deps: true
+  silence_deprecations: [import]
+
 # Build settings
 
 #ifdef LOCALTEST
@@ -45,6 +49,9 @@ author:
 minima:
   hide_site_feed_link: true
   skin: bulb
+  date_format: "%Y-%m-%d"
+
+  #show_excerpts: true
 
   social_links:
     - title: Наша группа в ВК
@@ -56,6 +63,9 @@ minima:
     - title: Исходный код этого сайта на GitHub
       icon: github
       url: "https://github.com/bulb22724/bulb22724.github.io"
+    - title: RSS-фид сайта
+      icon: feed
+      url: feed.xml
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,0 +1,40 @@
+favorites:
+  - url: /assets/events/decode/ulianka-battery.jpg
+    label: Мем с аккумулятором, созданный на Ulianka Scrimmage 4.0
+others:
+  - name: DECODE
+    folder: /assets/events/decode
+    id: decode
+    photos:
+      - url: meeting1-everyone.jpg
+        label: Фото команды с первой встречи Лиги
+      - url: meeting1-robot.jpg
+        label: Фото робота с первой встречи Лиги
+      - url: meeting2-everyone.jpg
+        label: Фото команды со второй встречи Лиги
+      - url: meeting2-robot.jpg
+        label: Фото робота со второй встречи Лиги
+      - url: meeting3-robot.jpg
+        label: Наши попытки доделать робота перед инспекцией на третьей встрече Лиги
+      - url: pml30-robot.jpg
+        label: Доделываем робота перед инспекцией на PML30 Scrimmage
+      - url: pml30-everyone.jpg
+        label: Фото команды с PML30 Scrimmage
+      - url: pml30-award.jpg
+        label: Награда Judges' Choice Winner, которую мы получили на PML30 Scrimmage
+      - url: regional-arrival.jpg
+        label: Мы прибыли на Региональный Отбор
+      - url: regional-everyone.jpg
+        label: Фото команды с регионального тура соревнований
+      - url: regional-robot.jpg
+        label: Фото робота с регионального тура соревнований
+      - url: regional-station.jpg
+        label: Наша станция на региональном туре соревнований
+      - url: ulianka-everyone.jpg
+        label: Фото команды с Ulianka Scrimmage 4.0
+      - url: ulianka-robot.jpg
+        label: Фото робота с Ulianka Scrimmage 4.0
+      - url: presentation.jpg
+        label: Презентация Лиги Инженеров в нашей школе во время мероприятия "Ярмарка проектов"
+      - url: presentation-robot.jpg
+        label: Фото робота с презентации Лиги Инженеров
