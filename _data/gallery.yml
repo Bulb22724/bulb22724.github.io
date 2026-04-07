@@ -1,4 +1,3 @@
-favorites:
 categories:
   - name: Избранные фото
     id: favorites
@@ -10,6 +9,8 @@ categories:
   - name: DECODE
     folder: /assets/events/decode
     id: decode
+    # если пост в bulb post maker имеет все эти теги, он сохранит фото здесь
+    matchestags: decode
     photos:
       - url: meeting1-everyone.jpg
         label: Фото команды с первой встречи Лиги
