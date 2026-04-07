@@ -2,6 +2,7 @@ categories:
   - name: Избранные фото
     id: favorites
     folder: /.
+    matchestags: []
     photos:
       - url: /assets/events/decode/ulianka-battery.jpg
         label: Мем с аккумулятором, созданный на Ulianka Scrimmage 4.0
@@ -10,7 +11,7 @@ categories:
     folder: /assets/events/decode
     id: decode
     # если пост в bulb post maker имеет все эти теги, он сохранит фото здесь
-    matchestags: decode
+    matchestags: ["decode"]
     photos:
       - url: meeting1-everyone.jpg
         label: Фото команды с первой встречи Лиги
