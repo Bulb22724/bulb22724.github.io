@@ -47,7 +47,7 @@ author:
   email: "electrovoyagesoftware@gmail.com"
 
 minima:
-  hide_site_feed_link: true
+  #hide_site_feed_link: true
   skin: bulb
   date_format: "%Y-%m-%d"
 
@@ -63,9 +63,9 @@ minima:
     - title: Исходный код этого сайта на GitHub
       icon: github
       url: "https://github.com/bulb22724/bulb22724.github.io"
-    - title: RSS-фид сайта
-      icon: feed
-      url: feed.xml
+    #- title: RSS-фид сайта
+      #icon: feed
+      #url: feed.xml
 
 # Exclude from processing.
 # The following items will not be processed, by default.
