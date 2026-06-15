@@ -4,4 +4,4 @@ title: Награды
 permalink: /awards
 ---
 
-{% include indev.svg %}
+{% include overflowing-3grid.html people=site.data.awards template="awardcard.html"%}

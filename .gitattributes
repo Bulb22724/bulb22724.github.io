@@ -1,0 +1,2 @@
+/_make_config.sh text eol=lf
+/_test_locally.sh text eol=lf

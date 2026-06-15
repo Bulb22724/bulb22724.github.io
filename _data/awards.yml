@@ -1,0 +1,5 @@
+# фото в папке /assets/awards
+- image: coolaward.png
+  label: "очень крутая награда"
+- image: coolaward2.png
+  label: "ещё более крутая награда"
