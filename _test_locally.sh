@@ -2,4 +2,4 @@
 
 # если это сделать по-человечески прямой командой, то не видит bundle
 bundle=$(which bundle) 
-$bundle exec jekyll serve -o
+$bundle exec jekyll serve --force_polling
